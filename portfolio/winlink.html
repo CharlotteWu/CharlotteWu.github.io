@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>动态组件设计 － 幸运转盘</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/article.css">
+    <script src="../js/script.js"></script>
+    <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js?"></script>
+</head>
+<body>
+
+<div class="sub-menu">
+    <div class="menu-content">
+        <a href="../index.html">
+            <div class="icon">
+                <img src="../img/avatar.png">
+            </div>
+        </a>
+        <div class="sub-menu-btn"></div>
+
+        <div class="sub-menu-normal">
+            <a href="../index.html">Portfolio</a>
+            <a href="../illustrations.html">Illustration</a>
+        </div>
+    </div>
+</div>
+
+<!--the screen width less than 850px-->
+<div class="sub-menu-list">
+    <a href="../index.html"><p>Portfolio</p></a>
+    <a href="../illustrations.html"><p>Illustration</p></a>
+    <p class="close">X</p>
+</div>
+
+<div class="article">
+    <div class="intro winlink-intro">
+        <div class="heading">
+            <p class="head">动态组件设计 － 幸运转盘</p>
+            <p class="subhead">互动场景是云联科技网络有限公司 －－ 微商城的模块功能，通过在页面上添加组件并编辑生成h5页面。用于活动页、展示页等的制作，致力于为客户打造简洁高效的h5编辑器。</p>
+        </div>
+    </div>
+    <div class="main-text">
+        <section>
+            <div class="section-part begin">
+                <p class="part-head">项目加塞心更塞</p>
+                <p class="paragraph">临近春节，大多数客户要求制作节日相关的活动抽奖页。有时会打断项目的进度。并且通常从设计到制作完成，需要2～3天左右的时间，客户不满意的话还需要修改。在现有云平台里的静态页面制作器的基础上，有了动态组件的制作想法。</p>
+                <p class="paragraph">身为前端开发，也参与了部分设计。这次我们首先单独设计了幸运轮盘这一组件。<strong>下面所展示的是我的概念设计方案。</strong></p>
+            </div>
+        </section>
+
+        <section class="contraints">
+            <div class="section-part">
+                <p class="part-head">局限</p>
+                <div class="pic">
+                    <img src="../img/winlink/current.jpg">
+                </div>
+                <p class="paragraph">上图是现有界面的样式，编辑组件的窗口由于位置拥挤，但组件之间无上下文关系，可以独立设置为弹窗。所以，<strong>如何解决在弹窗状态下直观的编辑组件</strong>成了一个难题。</p>
+            </div>
+        </section>
+
+        <section class="winlink-problems">
+            <div class="section-part">
+                <p class="part-head">问题</p>
+                <p class="paragraph">在网上找了一些微信第三发开发平台上的 "幸运转盘" 插件，发现大多有以下问题：</p>
+                <p class="part-subhead">• 设置机制让用户难以清楚</p>
+                <p class="paragraph">在网上的大多数转盘制作插件中，基本是通过添加奖项，按照奖项的多少添加转盘瓣，不能自己定义瓣数，奖项的位置也无法清楚的知道，修改时需要确定奖项后再往回寻找与之对应的奖项进行修改。</p>
+                <p class="part-subhead">• 无法预知每一步带来的效果</p>
+                <p class="paragraph">设置后需要按下预览键后，弹跳出新窗口显示最终效果，在出错的情况下还需重新设置后再打开新的窗口浏览，让用户倍感疲累。</p>
+                <p class="part-subhead">• 单一的视觉效果</p>
+                <p class="paragraph">在插件设置中，没有多余的转盘皮肤供用户选择，无法较好的和多种场景的背景融合。</p>
+                <div class="pic">
+                    <img src="../img/winlink/example.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-part">
+                <p class="part-head">设计</p>
+                <div class="pic design">
+                    <img src="../img/winlink/basic.png">
+                    <img src="../img/winlink/petal.png">
+                    <img src="../img/winlink/probability.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="winlink-explain">
+            <div class="section-part">
+                <p class="part-subhead">• 设置预览区</p>
+                <p class="paragraph">由于在弹窗中看不到转盘在模拟界面的实时状态，所以将内容区分割为预览区和编辑区，这样使用户一目了然。</p>
+                <p class="part-subhead">• 点击相应的瓣编辑信息</p>
+                <p class="paragraph">框架选用的是 VUE (MV*)框架，数据可以进行双向绑定（通俗来说文本框中输入什么内容，文本框中的内容就显示在页面上）。在此设计成点击每一瓣来进行编辑信息，以此满足每个人的不同需求，并且在修改的时候可以直接点击要修改的瓣。</p>
+                <p class="part-subhead">• 添加皮肤功能</p>
+                <p class="paragraph">多种节日和不同风格皮肤，供用户选择最适合他们的那一款。</p>
+            </div>
+        </section>
+
+
+    </div>
+
+</div>
+
+<footer>
+    <div class="conclusion">
+        <div class="time">
+            <p class="foot-title">Time</p>
+            <p class="foot-content">1 month</p>
+        </div>
+
+        <div class="role">
+            <p class="foot-title">My Roles</p>
+            <p class="foot-content">概念设计</br>原型设计</br>视觉设计</p>
+        </div>
+
+        <div class="toolkit">
+            <p class="foot-title">Toolkit</p>
+            <p class="foot-content">Sketch</p>
+        </div>
+    </div>
+
+    <div id="to_top">
+        back to top
+    </div>
+</footer>
+
+<!--chinese font-->
+<script type="text/javascript">
+    $youziku.load("body", "7062d0fa25934f6a8db2e8ab0271c01d", "Source-Han-Light");
+    /*$youziku.load("#id1,.class1,h1", "7062d0fa25934f6a8db2e8ab0271c01d", "Source-Han-Light");*/
+    /*．．．*/
+    $youziku.draw();
+</script>
+</body>
+</html>
