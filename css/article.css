@@ -87,6 +87,9 @@
     .sub-menu-normal{
         display: block;
     }
+    .sub-menu-list{
+        display: none;
+    }
 
 }
 
