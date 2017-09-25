@@ -101,7 +101,9 @@
 }
 
 .subtitle{
-    display: none;
+    display: block;
+    font-size: 18px;
+    padding-top: 24px;
 }
 
 footer{
@@ -147,14 +149,6 @@ footer{
     .contact{
         text-align: left;
     }
-}
-
-@media screen and (min-width: 500px){
-     .subtitle{
-         display: block;
-         font-size: 18px;
-         padding-top: 24px;
-     }
 }
 
 @media screen and (min-width: 880px) {
