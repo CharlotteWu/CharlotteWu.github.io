@@ -151,7 +151,7 @@
 }
 
 .paragraph{
-    padding: 12px 0 12px 0;
+    padding: 12px 14px 12px 14px;
     line-height: 1.5;
 }
 
@@ -304,16 +304,12 @@
     background: #F5F4F3;
 }
 
-.infitell-problem-list{
-    background: #9FC4BA;
-}
-
 .problem-list img{
-    max-width: 150px;
+    max-width: 300px;
 }
 
 .infitell-explain{
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -322,7 +318,7 @@
 }
 
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
     .infitell-problem{
         font-size: 0;
     }
@@ -333,10 +329,7 @@
         width: 33.3%;
         vertical-align: top;
     }
-    .problem-list p{
-        width: 80%;
-        margin: 0 auto;
-    }
+
 }
 
 /*footer*/
