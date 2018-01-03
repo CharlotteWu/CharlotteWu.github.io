@@ -16,6 +16,8 @@ abbr, acronym { border: 0; }
 /*footer紧贴底部*/
 html{
     height: 100%;
+    font-family:  "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+
 }
 
 body{
