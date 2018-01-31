@@ -212,9 +212,7 @@
     overflow: hidden;
 }
 
-.design img{
-    max-width: 680px;
-}
+
 
 .new-link{
     text-decoration: underline;
@@ -301,6 +299,10 @@
     background: #F5F4F3;
 }
 
+.first-design img{
+    max-width: 500px;
+}
+
 .problem-list img{
     max-width: 300px;
 }
@@ -314,6 +316,13 @@
     background: #ffffff;
 }
 
+.link{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 28px;
+}
 
 @media screen and (min-width: 700px) {
     .infitell-problem{

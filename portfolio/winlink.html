@@ -50,7 +50,7 @@
             </div>
         </section>
 
-        <section class="contraints">
+        <section>
             <div class="section-part">
                 <p class="part-head">局限</p>
                 <div class="pic">
@@ -60,7 +60,7 @@
             </div>
         </section>
 
-        <section class="winlink-problems">
+        <section>
             <div class="section-part">
                 <p class="part-head">问题</p>
                 <p class="paragraph">在网上找了一些微信第三发开发平台上的 "幸运转盘" 插件，发现大多有以下问题：</p>
@@ -78,25 +78,38 @@
 
         <section>
             <div class="section-part">
-                <p class="part-head">设计</p>
-                <div class="pic design">
-                    <img src="../img/winlink/basic.png">
-                    <img src="../img/winlink/petal.png">
-                    <img src="../img/winlink/probability.png">
+                <p class="part-head">设计预想</p>
+                <p class="paragraph">
+                    因为只能在弹窗中设置轮盘的相关信息，又希望可以较直观的编辑轮盘每个瓣的信息。所以首先将编辑区域划分为预览区和编辑区。</br>
+                    按照这个想法设计出了初稿，但设计完后再仔细看就有问题了：
+                </p>
+                <div class="pic first-design">
+                    <img src="../img/winlink/first.png">
                 </div>
+                <p class="paragraph">
+                    • 所有的编辑信息集中于一个界面，不利于后期的功能拓展，容易造成用户焦点迷失。</br>
+                    • 随可以点击任意一个瓣进行编辑，但只有在退出编辑后才能知道编辑后的效果。
+                </p>
             </div>
         </section>
 
-        <section class="winlink-explain">
+        <section>
             <div class="section-part">
-                <p class="part-subhead">• 设置预览区</p>
-                <p class="paragraph">由于在弹窗中看不到转盘在模拟界面的实时状态，所以将内容区分割为预览区和编辑区，这样使用户一目了然。</p>
-                <p class="part-subhead">• 点击相应的瓣编辑信息</p>
-                <p class="paragraph">框架选用的是 VUE (MV*)框架，数据可以进行双向绑定（通俗来说文本框中输入什么内容，文本框中的内容就显示在页面上）。在此设计成点击每一瓣来进行编辑信息，以此满足每个人的不同需求，并且在修改的时候可以直接点击要修改的瓣。</p>
-                <p class="part-subhead">• 添加皮肤功能</p>
-                <p class="paragraph">多种节日和不同风格皮肤，供用户选择最适合他们的那一款。</p>
+                <p class="part-head">再设计</p>
+                <p class="paragraph">再次的设计，针对于以上的问题，做出了以下的改进：</p>
+                <p class="paragraph">
+                    • 预览区可以直接预览最终的效果，点击任意一瓣即可边编辑边看到效果。</br>
+                    • 将编辑区的功能拆分成三个tab模块，让用户可以专注于当前模块功能的编辑，不受其它模块功能的影响。
+                </p>
+
+                <div class="pic design">
+                    <img src="../img/winlink/basic.png">
+                </div>
+                <a href="https://charlottewu.github.io/rotary/" class="link">我是demo链接。点我点我~</a>
             </div>
         </section>
+
+
 
 
     </div>
