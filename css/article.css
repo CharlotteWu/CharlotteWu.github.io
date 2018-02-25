@@ -9,9 +9,8 @@
     top: 0;
     width: 100%;
     height: 56px;
-    background: #ffffff;
-    border-bottom: 1px solid #F0F0F0;
     z-index: 10;
+    background: #ffffff;
 }
 
 .menu-content{
@@ -106,17 +105,17 @@
 /*media under 500px*/
 
 .section-part{
-    max-width: 960px;
+    max-width: 700px;
     margin: 0 auto;
-    padding: 48px 10% 48px 10%;
+    padding: 24px 10% 24px 10%;
     position: relative;
 }
 
 /*每部分的大标题*/
 .part-head{
-    font-size: 32px;
-    text-align: center;
+    font-size: 40px;
     font-weight: bolder;
+    color: #2E2E2E;
 }
 
 .part-subhead{
@@ -126,7 +125,7 @@
 
 .intro{
     text-align: center;
-    height: 450px;
+    height: 400px;
     max-width: 100%;
     position: relative;
 }
@@ -151,18 +150,16 @@
 }
 
 .paragraph{
-    padding: 12px 14px 12px 14px;
+    padding: 6px 14px 6px 0;
     line-height: 1.5;
 }
 
 /*clt 计算机等级考试网站*/
 
 .clt-intro{
-    background: url("../img/clt/cover.jpg");
-    background-size: cover;
-    color: #ffffff;
+    background: #AFE0E6 url("../img/cover/c-illustration.png") bottom no-repeat;
+    background-size: contain;
 }
-
 
 
 .iq{
@@ -253,9 +250,8 @@
 
 /*winlink*/
 .winlink-intro{
-    background: url("../img/winlink/cover.jpg");
-    background-size: cover;
-    color: #ffffff;
+    background: #87D5F6 url("../img/cover/w-illustration.png") bottom no-repeat;
+    background-size: contain;
 }
 
 .contraints{
@@ -281,9 +277,8 @@
 
 /*MUGA*/
 .muga-intro{
-    background: url("../img/infitell/cover.jpg");
-    background-size: cover;
-    color: #ffffff;
+    background: #F5AF53 url("../img/cover/i-illustration.png") bottom no-repeat;
+    background-size: contain;
 }
 
 .if-app{
@@ -295,9 +290,6 @@
     margin: 0 auto;
 }
 
-.infitell-explain-guide{
-    background: #F5F4F3;
-}
 
 .first-design img{
     max-width: 500px;
