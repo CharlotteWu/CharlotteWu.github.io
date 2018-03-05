@@ -21,11 +21,3 @@ window.onload = function () {
 }
 
 
-//loading加载动画
-document.onreadystatechange = function () {
-    var loading = document.getElementById('loading');
-
-    if(document.readyState == 'complete'){
-        loading.style.display = 'none';
-    }
-};
