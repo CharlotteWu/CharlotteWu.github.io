@@ -58,7 +58,7 @@
                 <div class="pic">
                     <img src="../img/winlink/current.jpg">
                 </div>
-                <p class="paragraph">上图是现有界面的样式，编辑组件的窗口由于位置拥挤，但组件之间无上下文关系，可以独立设置为弹窗。所以，<strong>如何解决在弹窗状态下直观的编辑组件</strong>成了一个难题。</p>
+                <p class="paragraph">上图是现有界面的样式，编辑组件的窗口由于位置拥挤，但组件之间无上下文关系，可以独立设置为弹窗。所以，<strong>如何解决在弹窗状态下将轮盘的内容清晰地进行编辑</strong>成了一个难题。</p>
             </div>
         </section>
 
@@ -82,15 +82,15 @@
             <div class="section-part">
                 <p class="part-head">设计预想</p>
                 <p class="paragraph">
-                    因为只能在弹窗中设置轮盘的相关信息，又希望可以较直观的编辑轮盘每个瓣的信息。所以首先将编辑区域划分为预览区和编辑区。</br>
+                    因为只能在弹窗中设置轮盘的相关信息，又希望可以较直观的编辑轮盘每个瓣的信息。所以首先将编辑区域划分为轮盘区和编辑区。</br>
                     按照这个想法设计出了初稿，但设计完后再仔细看就有问题了：
                 </p>
                 <div class="pic first-design">
                     <img src="../img/winlink/first.png">
                 </div>
                 <p class="paragraph">
-                    • 所有的编辑信息集中于一个界面，不利于后期的功能拓展，容易造成用户焦点迷失。</br>
-                    • 随可以点击任意一个瓣进行编辑，但只有在退出编辑后才能知道编辑后的效果。
+                    • 页面中的功能分布不合理，难以对进行后续的功能拓展。</br>
+                    • 虽然可以点击任意一个瓣进行编辑，但只有在退出编辑后才能知道编辑后的效果，且容易忘记哪个瓣已编辑过。
                 </p>
             </div>
         </section>
@@ -101,7 +101,7 @@
                 <p class="paragraph">再次的设计，针对于以上的问题，做出了以下的改进：</p>
                 <p class="paragraph">
                     • 预览区可以直接预览最终的效果，点击任意一瓣即可边编辑边看到效果。</br>
-                    • 将编辑区的功能拆分成三个tab模块，让用户可以专注于当前模块功能的编辑，不受其它模块功能的影响。
+                    • 将编辑区的功能拆分成三个模块，让用户可以专注于当前模块功能的编辑，不受其它模块功能的影响。
                 </p>
 
                 <div class="pic design">
@@ -111,6 +111,34 @@
             </div>
         </section>
 
+        <section>
+            <div class="section-part">
+                <p class="part-head">反馈</p>
+                <p class="paragraph">将设计放至我所参加的小密圈（交互设计小厨房）中获取反馈，hozin指出了几个改进点：</p>
+                <p class="paragraph">
+                    • tab的应用容易导致用户多次点击检查，增加点击检查负担。</br>
+                    • 轮盘上做交互增加后台负担。</br>
+                    • 轮盘瓣只有9瓣，可以做增值列表。</br>
+                </p>
+
+                <p class="paragraph">看了意见后，我认为：</p>
+                <p class="paragraph">
+                    • 不使用tab，直接罗列选项，超过部分采用滚动条。</br>
+                    • 提交时是提交json，在轮盘中既是在操作数组位置，并不会增加后台的负担。</br>
+                    • 如果采用增值列表的话，大可不需轮盘预览的存在。</br>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-part">
+                <p class="part-head">再再设计</p>
+                <p class="paragraph">根据建议改进，去除轮盘预览，编辑轮盘为增值列表，把每个模块内容平铺出来，让用户一目了然。</p>
+                <div class="pic">
+                    <img src="../img/winlink/redesign-rotary.jpg">
+                </div>
+            </div>
+        </section>
 
 
 
