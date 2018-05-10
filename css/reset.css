@@ -1,5 +1,5 @@
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, pre, form, fieldset, input, textarea, p, blockquoteth, td { margin: 0px; padding: 0px; }
-h1, h2, h3, h4, h5, h6 { font-size: 12px; font-weight: normal; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
 ul, ol { list-style: none; }
 table { border-collapse: collapse; border-spacing: 0; }
 object, input, textarea { outline: none; }
@@ -16,8 +16,7 @@ abbr, acronym { border: 0; }
 /*footer紧贴底部*/
 html{
     height: 100%;
-    font-family:  "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-
+    font-family:  Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 body{
@@ -25,6 +24,7 @@ body{
     flex-direction: column;
     width: 100%;
     height: 100%;
+    color: #333333;
 }
 header{
     flex: 0 0 auto;
@@ -44,6 +44,94 @@ footer{
 }
 
 img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*头部菜单通用样式*/
+/*头部菜单*/
+.sub-menu{
     width: 100%;
-    height: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 56px;
+}
+
+.menu-content{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    width: 40px;
+}
+
+/*小于800px*/
+.sub-menu-btn{
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background:#ffffff url("../img/icon/menu.png") center no-repeat;
+    background-size: 30px 30px;
+}
+
+.sub-menu-list{
+    display: none;
+    position: fixed;
+    top: -144px;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    transition: transform .5s ease;
+    -webkit-transition: transform .5s ease;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+}
+
+.sub-menu-list-popup{
+    transition: transform .5s ease;
+    -webkit-transition: transform .5s ease;
+    transform: translateY(144px);
+    -webkit-transform: translateY(144px);
+}
+
+.sub-menu-normal{
+    display: none;
+    position: absolute;
+    right: 0;
+}
+
+.sub-menu-normal a{
+    display: inline-block;
+    width: 80px;
+    line-height: 56px;
+}
+
+.sub-menu-list p{
+    width: 100%;
+    height: 48px;
+    background: #ffffff;
+    line-height: 48px;
+    text-align: center;
+}
+
+@media screen and (min-width: 850px){
+    .sub-menu-btn{
+        display: none;
+    }
+    .sub-menu-normal{
+        display: block;
+    }
+    .sub-menu-list{
+        display: none;
+    }
+
 }

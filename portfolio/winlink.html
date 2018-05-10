@@ -34,21 +34,61 @@
 </div>
 
 <div class="article">
-    <div class="intro winlink-intro">
+    <div class="cover w-cover">
+        <div class="sub-menu">
+            <div class="menu-content">
+                <a href="../index.html">
+                    <div class="icon">
+                        <img src="../img/avatar.png">
+                    </div>
+                </a>
+                <div class="sub-menu-btn"></div>
 
+                <div class="sub-menu-normal">
+                    <a href="../index.html">Portfolio</a>
+                    <a href="http://www.zcool.com.cn/u/14151413">Illustration</a>
+                </div>
+            </div>
+        </div>
+
+        <!--the screen width less than 850px-->
+        <div class="sub-menu-list">
+            <a href="../index.html"><p>Portfolio</p></a>
+            <a href="http://www.zcool.com.cn/u/14151413"><p>Illustration</p></a>
+            <p class="close">X</p>
+        </div>
+
+        <div class="illustration">
+            <img src="../img/cover/w-illustration.png">
+        </div>
+
+        <div class="title">
+            <p class="title-head">动态组件设计 － 幸运转盘</p>
+        </div>
     </div>
     <div class="main-text">
+
         <section>
             <div class="section-part">
-                <p class="part-head">动态组件设计 － 幸运转盘</p>
-                <p class="paragraph">互动场景是微商城的模块功能，通过在页面上添加组件并编辑生成h5页面。用于活动页、展示页等的制作，致力于为客户打造简洁高效的h5编辑器。</p>
-            </div>
-        </section>
-        <section>
-            <div class="section-part begin">
-                <p class="part-head">项目加塞心更塞</p>
-                <p class="paragraph">临近春节，大多数客户要求制作节日相关的活动抽奖页。有时会打断项目的进度。并且通常从设计到制作完成，需要2～3天左右的时间，客户不满意的话还需要修改。在现有云平台里的静态页面制作器的基础上，有了动态组件的制作想法。</p>
-                <p class="paragraph">身为前端开发，也参与了部分设计。这次我们首先单独设计了幸运轮盘这一组件。<strong>下面所展示的是我的概念设计方案。</strong></p>
+                <ul class="intro">
+                    <li class="case-intro">
+                        <p class="intro-head">ABOUT THE PROJECT - 项目加塞心更塞</p>
+                        <p class="paragraph">互动场景是微商城的模块功能，通过在页面上添加组件并编辑生成h5页面。用于活动页、展示页等的制作，致力于为客户打造简洁高效的h5编辑器。</p>
+                        <p class="paragraph">临近春节，大多数客户要求制作节日相关的活动抽奖页。有时会打断项目的进度。并且通常从设计到制作完成，需要2～3天左右的时间，客户不满意的话还需要修改。在现有云平台里的静态页面制作器的基础上，有了动态组件的制作想法。</p>
+                        <p class="paragraph">身为前端开发，也参与了部分设计。这次我们首先单独设计了幸运轮盘这一组件。</p>
+                    </li>
+
+                    <li class="role-intro">
+                        <p class="intro-head">ROLE</p>
+                        <p class="paragraph">原型设计,前端开发</p>
+                    </li>
+
+                    <!--<li class="time-intro">-->
+                        <!--<p class="intro-head">TIME</p>-->
+                        <!--<p class="paragraph">2015.12 ~ 2016.3</p>-->
+                    <!--</li>-->
+
+                </ul>
             </div>
         </section>
 
@@ -58,7 +98,7 @@
                 <div class="pic">
                     <img src="../img/winlink/current.jpg">
                 </div>
-                <p class="paragraph">上图是现有界面的样式，编辑组件的窗口由于位置拥挤，但组件之间无上下文关系，可以独立设置为弹窗。所以，<strong>如何解决在弹窗状态下将轮盘的内容清晰地进行编辑</strong>成了一个难题。</p>
+                <p class="paragraph">上图是现有界面的样式，编辑组件的窗口由于位置拥挤，但组件之间无上下文关系，可以独立设置为弹窗。所以，<span class="highlight">如何解决在弹窗状态下将轮盘的内容清晰地进行编辑</span>成了一个难题。</p>
             </div>
         </section>
 
@@ -67,11 +107,9 @@
                 <p class="part-head">问题</p>
                 <p class="paragraph">在网上找了一些微信第三发开发平台上的 "幸运转盘" 插件，发现大多有以下问题：</p>
                 <p class="part-subhead">• 设置机制让用户难以清楚</p>
-                <p class="paragraph">在网上的大多数转盘制作插件中，基本是通过添加奖项，按照奖项的多少添加转盘瓣，不能自己定义瓣数，奖项的位置也无法清楚的知道，修改时需要确定奖项后再往回寻找与之对应的奖项进行修改。</p>
+                <p class="paragraph">在网上的大多数转盘制作插件中，基本是通过添加奖项，按照奖项的多少添加转盘瓣，不能自己定义瓣数，奖项的位置也不能自定义。</p>
                 <p class="part-subhead">• 无法预知每一步带来的效果</p>
                 <p class="paragraph">设置后需要按下预览键后，弹跳出新窗口显示最终效果，在出错的情况下还需重新设置后再打开新的窗口浏览，让用户倍感疲累。</p>
-                <p class="part-subhead">• 单一的视觉效果</p>
-                <p class="paragraph">在插件设置中，没有多余的转盘皮肤供用户选择，无法较好的和多种场景的背景融合。</p>
                 <div class="pic">
                     <img src="../img/winlink/example.jpg">
                 </div>
@@ -107,7 +145,7 @@
                 <div class="pic design">
                     <img src="../img/winlink/basic.png">
                 </div>
-                <a href="https://charlottewu.github.io/rotary/" class="link">我是demo链接。点我点我~</a>
+                <a href="https://charlottewu.github.io/rotary/" class="link">点击查看Demo</a>
             </div>
         </section>
 
@@ -117,15 +155,14 @@
                 <p class="paragraph">将设计放至我所参加的小密圈（交互设计小厨房）中获取反馈，hozin指出了几个改进点：</p>
                 <p class="paragraph">
                     • tab的应用容易导致用户多次点击检查，增加点击检查负担。</br>
-                    • 轮盘上做交互增加后台负担。</br>
-                    • 轮盘瓣只有9瓣，可以做增值列表。</br>
+                    • 轮盘瓣只有9瓣，可以做增值列表，以文字来叙述轮盘的情况，减少直接使用轮盘做交互的问题。</br>
                 </p>
 
-                <p class="paragraph">看了意见后，我认为：</p>
+                <p class="paragraph">看了意见后，想了想：</p>
                 <p class="paragraph">
-                    • 不使用tab，直接罗列选项，超过部分采用滚动条。</br>
-                    • 提交时是提交json，在轮盘中既是在操作数组位置，并不会增加后台的负担。</br>
-                    • 如果采用增值列表的话，大可不需轮盘预览的存在。</br>
+                    • 不使用tab，直接罗列选项，减少切换tab的点击次数。</br>
+                    • 轮盘做交互的话有以下几点问题：</br>1、不点击轮盘瓣设置模块时，任何在轮盘上的点击操作都无法进行瓣内容编辑。</br>
+                         2、在轮盘瓣设置模块编辑时，用户要在轮盘和内容编辑区视线来回切换，比较曲折麻烦。</br>
                 </p>
             </div>
         </section>
@@ -133,7 +170,7 @@
         <section>
             <div class="section-part">
                 <p class="part-head">再再设计</p>
-                <p class="paragraph">根据建议改进，去除轮盘预览，编辑轮盘为增值列表，把每个模块内容平铺出来，让用户一目了然。</p>
+                <p class="paragraph">根据建议改进，<span class="highlight">去除轮盘预览，编辑轮盘为增值列表</span>，把每个模块内容平铺出来，让用户一目了然。</p>
                 <div class="pic">
                     <img src="../img/winlink/redesign-rotary.jpg">
                 </div>
@@ -141,31 +178,27 @@
         </section>
 
 
+        <section>
+            <div class="section-part">
+                <p class="part-head">总结</p>
+                <p class="paragraph">
+                    <span class="highlight">"解决问题的过程就是不断把大问题拆分成小问题来解决。"</span>这是刚才是接触这个项目时组长对我说的一句话，这句话现在看来也适用于设计，
+                    将功能类似的类目归类为同一项，既能够集中于编辑，又能在修改查找时按照大类快速查找。</br>
+                    <span class="highlight">考虑清楚问题的限制性</span>让我明白了要在合理的范围内才能更好的解决问题。
+                </p>
+            </div>
+        </section>
+
 
     </div>
 
 </div>
 
 <footer>
-    <div class="conclusion">
-        <div class="time">
-            <p class="foot-title">Time</p>
-            <p class="foot-content">1 month</p>
-        </div>
 
-        <div class="role">
-            <p class="foot-title">My Roles</p>
-            <p class="foot-content">概念设计</br>原型设计</br>视觉设计</p>
-        </div>
-
-        <div class="toolkit">
-            <p class="foot-title">Toolkit</p>
-            <p class="foot-content">Sketch</p>
-        </div>
-    </div>
-
-    <div id="to_top">
-        back to top
+    <div class="footer-box">
+        <!--<a href="infitell.html" class="footer-btn footer-pre">Pre:智慧导览</a>-->
+        <a href="clt.html" class="footer-btn footer-next">Next:计算机等级考试网站重设计</a>
     </div>
 </footer>
 

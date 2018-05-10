@@ -6,71 +6,89 @@
     <title>计算机等级考试网站</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/article.css">
-    <script src="../js/loading.js"></script>
+    <!--<script src="../js/loading.js"></script>-->
 </head>
 <body>
 
-<div class="sub-menu">
-    <div class="menu-content">
-        <a href="../index.html">
-            <div class="icon">
-                <img src="../img/avatar.png">
-            </div>
-        </a>
-        <div class="sub-menu-btn"></div>
-
-        <div class="sub-menu-normal">
-            <a href="../index.html">Portfolio</a>
-            <a href="http://www.zcool.com.cn/u/14151413">Illustration</a>
-        </div>
-    </div>
-</div>
-
-<!--the screen width less than 850px-->
-<div class="sub-menu-list">
-        <a href="../index.html"><p>Portfolio</p></a>
-        <a href="http://www.zcool.com.cn/u/14151413"><p>Illustration</p></a>
-        <p class="close">X</p>
-</div>
 
 <div class="article">
-    <div class="intro clt-intro"></div>
+    <div class="cover c-cover">
+        <div class="sub-menu">
+            <div class="menu-content">
+                <a href="../index.html">
+                    <div class="icon">
+                        <img src="../img/avatar.png">
+                    </div>
+                </a>
+                <div class="sub-menu-btn"></div>
+
+                <div class="sub-menu-normal">
+                    <a href="../index.html">Portfolio</a>
+                    <a href="http://www.zcool.com.cn/u/14151413">Illustration</a>
+                </div>
+            </div>
+        </div>
+
+        <!--the screen width less than 850px-->
+        <div class="sub-menu-list">
+            <a href="../index.html"><p>Portfolio</p></a>
+            <a href="http://www.zcool.com.cn/u/14151413"><p>Illustration</p></a>
+            <p class="close">X</p>
+        </div>
+
+        <div class="illustration">
+            <img src="../img/cover/c-illustration.png">
+        </div>
+
+        <div class="title">
+            <p class="title-head">计算机等级考试网站重设计</p>
+        </div>
+    </div>
 
     <div class="main-text">
         <section>
             <div class="section-part">
-                <p class="part-head">计算机等级考试网站</p>
-                <p class="paragraph">计算机等级考试系统旨在为学生提供考前了解、提供学习资料和查询成绩等计算机考试服务。</p>
-            </div>
-        </section>
+                <ul class="intro">
+                    <li class="case-intro">
+                        <p class="intro-head">ABOUT THE PROJECT - 考试无处不在</p>
+                        <p class="paragraph">计算机教育在大学开始有比较完善的课程。由于工作需要，计算机等级考试成为了每个大学生的必考项目。大部分学生从大一就会开始学习相关计算机知识，准备报考计算机等级考试。</p>
+                        <p class="paragraph">计算机等级考试网（以下简称 “计机网” ）力求为学生提供最需要的服务。但是随着时间的流逝，<span class="highlight">单独发布资讯的计机网已经渐渐无法满足学生的需求;页面的体验不够友好</span>。所以重设计计机网迫在眉睫。</p>
+                    </li>
 
-        <section>
-            <div class="section-part">
-                <p class="part-head">考试无处不在</p>
-                <p class="paragraph">计算机教育在大学开始有比较完善的课程。由于工作需要，计算机等级考试成为了每个大学生的必考项目。大部分学生从大一就会开始学习相关计算机知识，准备报考计算机等级考试。</p>
-                <p class="paragraph">计算机等级考试网（以下简称 “计机网” ）力求为学生提供最需要的服务。但是随着时间的流逝，单独发布资讯的计机网已经渐渐无法满足学生的需求现。有的网站模块也难以扩展与新需求融合，页面的体验不够友好。重设计机网已迫在眉睫。</p>
+                    <li class="role-intro">
+                        <p class="intro-head">ROLE</p>
+                        <p class="paragraph">概念设计,原型设计,视觉设计,前端开发</p>
+                    </li>
+
+                    <!--<li class="time-intro">-->
+                        <!--<p class="intro-head">TIME</p>-->
+                        <!--<p class="paragraph">2015.1 ~ 2015.6</p>-->
+                    <!--</li>-->
+
+                </ul>
             </div>
         </section>
 
         <section>
             <div class="section-part">
                 <p class="part-head">思考，局限，挑战</p>
-                <p class="paragraph">仅仅发布信息的计机网已无法满足学生的需求。如何更加好的帮助学生通过计算机等级考试成为重点。</p>
-                <p class="paragraph">但由于开发成本零，开展调查无法扩展一定范围，前期难以收集一定量的数据。</p>
+                <p class="paragraph">由于计机网宣传较少的原因，班长发送消息往往比计机网所发布的更快让学生知晓。让计机网变得可有可无。如何更加好的帮助学生通过计算机等级考试成为重点。在此老师希望增加试题和报名等功能来完善网站，更好的应和学生的需求。</p>
+                <p class="paragraph">所以这次主要的问题是<span class="highlight">合理重构网站的功能结构，并且制定一个合理的模拟考试模块</span>成为了主要目标。</p>
+                <p class="paragraph">但由于前期开发经费基本零，开展调查无法扩展一定范围，前期难以收集一定量的数据。</p>
             </div>
         </section>
 
         <section>
             <div class="section-part research">
                 <p class="part-head">谁会使用？如何使用？</p>
-                <p class="paragraph">在开始设计之前，为了能更好的了解考生在考前、考中和考后的行为，所以我们访问了<span class="">5名即将考试或者已经考过试的学生和1位负责计算机等级考试的老师</span>。</p>
+                <p class="paragraph">在开始设计之前，为了能更好的了解考生在考前、考中和考后的行为，所以我们访问了<span class="highlight">负责计算机等级考试的老师，经常接触到考生比较普遍和收集考生数据</span>，一定程度上代表了学生群体需求总和。</p>
                 <div class="pic answer">
                     <img src="../img/clt/lily.jpg">
                     <img src="../img/clt/john.jpg">
                     <img src="../img/clt/chris.jpg">
                     <img src="../img/clt/leo.jpg">
                 </div>
-                <p class="paragraph">负责计算机等级考试的老师，经常接触到考生比较普遍和收集考生数据，一定程度上代表了学生群体需求总和。通过访问后我们总结出老师经常遇到的问题：</p>
+                <p class="paragraph">访问后我们总结出老师经常遇到的问题：</p>
                 <p class="paragraph">• 学生经常向老师索取相关资料</br>• 报完名后老师需手动输入资料（排队报名）</p>
             </div>
         </section>
@@ -78,91 +96,82 @@
         <section class="require">
             <div class="section-part">
                 <p class="part-head">所以，他们是谁？他们要的是什么呢？</p>
-                <p class="paragraph">为了更有针对性目标，将收集到的需求整理成一个为什么要参加计算机等级考试的学生形象：</p>
-                <div class="pic">
-                    <img src="../img/clt/student-persona.jpg">
-                </div>
-                <p class="paragraph">在考试期间，老师充当着发布消息，收集信息的角色，与学生紧密联系，所以老师在整个考试过程中充当承上启下的角色，总结所得出的形象如下：</p>
-                <div class="pic">
-                    <img src="../img/clt/teacher-persona.jpg">
+                <p class="paragraph">为了更有针对性目标，将收集到的需求整理成一个为什么要参加计算机等级考试的学生和日常负责计算机考试的老师形象：</p>
+                <div class="pic persona">
+                    <img src="../img/clt/student-need.png">
+                    <img src="../img/clt/teacher-need.png">
                 </div>
             </div>
         </section>
 
         <section>
             <div class="section-part">
-                <p class="part-head">页面流程图</p>
-                <p class="paragraph">设计出了基本的信息结构，具体的页面流程图。</p>
-                <p class="paragraph new-link">
-                    <a href="../img/clt/clt-flow-chart.pdf" target="_blank">点击查看具体页面流程图>></a>
+                <p class="part-head">功能结构</p>
+                <p class="paragraph">旧版网站中的内容主要以资讯公告类为主，但现在不但有资讯，并且有试题，报名等新功能的出现。所以重新规划结构就非常重要啦。</p>
+                <p class="paragraph">物以类聚，人以群分。在结构规划中也是这个道理，相同的类项归类到一个单元下，方便用户查找。</p>
+                <p class="paragraph">按照这种分类思想：我对所有功能进行了整理：</p>
+                <div class="pic">
+                    <img src="../img/clt/ia.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section class="simulation">
+            <div class="section-part">
+                <p class="part-head">模拟考试</p>
+                <p class="paragraph">在计算机等级考试网站中，比较有挑战性的是设计模拟考试这一模块。比较难在模拟考试中认为有几大要点：</p>
+                <p class="paragraph">1、考试的时间是有限的，在考试中懂得规划时间来说是非常重要的。</p>
+                <p class="paragraph">2、未开卷之前考生对试题一无所知。</p>
+                <p class="paragraph">3、提交后考生可以知晓答案是否对错，形成良好的反馈。</p>
+                <div class="pic">
+                    <img src="../img/clt/circle-loop.jpg">
+                </div>
+                <p class="paragraph">根据这些要点制定出了考试过程的步骤：</p>
+                <div class="pic">
+                    <img src="../img/clt/test1.jpg">
+
+                    <div class="illustrate illustrate-left illus1">
+                        因为每个等级考试里还分为多个考试种类，将等级与类型分开选择，减少选择干扰。
+                    </div>
+                </div>
+                <div class="pic">
+                    <img src="../img/clt/test2.jpg">
+
+                    <div class="illustrate illustrate-top illus2">
+                        在进行考试的过程中，有的学生喜欢知道剩余时间，有的学生觉得过于紧张选择不看，学生自己可以选择打开，默认打开状态。
+                    </div>
+                </div>
+                <div class="pic">
+                    <img src="../img/clt/test3.jpg">
+
+                    <div class="illustrate illustrate-top illus3">
+                        在提交答案后，在错题旁显示原因，有利于学生对错题更好的理解，而不是死记硬背。
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+         <section>
+             <div class="section-part">
+                 <p class="part-head">附件：</p>
+                 <p class="paragraph new-link">
+                     <a href="../img/clt/clt-flow-chart.pdf" target="_blank">点击查看具体页面流程图>></a>
+                 </p>
+                 <p class="paragraph new-link">
+                     <a href="../img/clt/clt-flow-chart.pdf" target="_blank">点击查看具体页面流程图>></a>
+                 </p>
+             </div>
+         </section>
+
+        <section>
+            <div class="section-part">
+                <p class="part-head">总结</p>
+                <p class="paragraph">
+                    项目从收集需求，整理信息架构、到制作页面、调整细节、最终通过验收，在离开学校开始实习前有了一个基本的项目流程概念。
+                    虽然像界面设计是第一次做，但从了解到用户需求，参考分析了类似的资讯类网站，才知道了围绕以用户为中心而设计的重要性－
+                    <span class="highlight">用户才是网站使用主体</span>。
                 </p>
-            </div>
-        </section>
-
-        <section class="prototype">
-            <div class="section-part">
-                <p class="part-head">制作原型</p>
-                <p class="paragraph">根据页面流程图绘制出的基本页面结构</p>
-                <div class="pic">
-                    <img src="../img/clt/prototype.jpg">
-                </div>
-            </div>
-        </section>
-
-        <section class="visual">
-            <div class="section-part">
-                <p class="part-head">主调颜色</p>
-                <p class="paragraph">在学习中，注意力集中是学习的关键，过多的花哨颜色容易分神，而蓝色代表冷静、理智、安详与广阔，减少噪音更加让用户集中注意力于内容上，提高效率。</p>
-                <div class="pic visual-color">
-                    <img src="../img/clt/visual.png">
-                </div>
-            </div>
-        </section>
-
-        <!--<section class="test">-->
-            <!--<div class="section-part">-->
-                <!--<p class="part-head">发现问题</p>-->
-                <!--<p class="paragraph">• 无法一键分享 ➡️ 在每篇文章中增加分享栏</p>-->
-                <!--<div class="pic">-->
-                    <!--<img src="../img/clt/fix1.png">-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</section>-->
-
-        <section class="final">
-            <div class="section-part">
-                <p class="paragraph">以下是部分页面展示：</p>
-                <p class="part-head">首页</p>
-                <div class="pic ">
-                    <img src="../img/clt/index.jpg">
-                </div>
-            </div>
-        </section>
-
-        <section class="index-explain">
-            <div class="section-part">
-                <div class="list pic">
-                    <img src="../img/clt/billboard.png">
-                    <p class="paragraph">将重要信息放置于内容区的左上角，有利于用户第一眼看到</p>
-                </div>
-                <div class="list pic">
-                    <img src="../img/clt/calendar.png">
-                    <p class="paragraph">日历以倒计时显示，让用户对剩余时间一目了然，做出计划准备。</p>
-                </div>
-                <div class="list pic">
-                    <img src="../img/clt/question.png">
-                    <p class="paragraph">将碎片化时间利用起来，一天一道小题，积少成多。</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="section-part">
-                <p class="part-head">创建新的模拟考</p>
-                <p class="paragraph">选择考试级别后生成新的模拟试卷，时间的倒数提示学生剩余的时间，也可选择关闭，还原出考试的真实感。</p>
-                <div class="pic">
-                    <img src="../img/clt/test.png">
-                </div>
             </div>
         </section>
 
@@ -170,27 +179,10 @@
 
 </div>
 
-
 <footer>
-    <div class="conclusion">
-        <div class="time">
-            <p class="foot-title">Time</p>
-            <p class="foot-content">6 months</p>
-        </div>
-
-        <div class="role">
-            <p class="foot-title">My Roles</p>
-            <p class="foot-content">概念设计</br>原型设计</br>视觉设计</br>前端开发</p>
-        </div>
-
-        <div class="toolkit">
-            <p class="foot-title">Toolkit</p>
-            <p class="foot-content">Sketch</br>HTML</br>CSS</br>Javascript</p>
-        </div>
-    </div>
-
-    <div id="to_top">
-         back to top
+    <div class="footer-box">
+        <!--<a href="infitell.html" class="footer-btn footer-pre">Pre:智慧导览</a>-->
+        <a href="winlink.html" class="footer-btn footer-next">Next:动态组件</a>
     </div>
 </footer>
 <script src="../js/script.js"></script>
