@@ -28,8 +28,8 @@ window.onload = function () {
         return top;
     }
 
-    console.log(document.documentElement.clientHeight);
-    console.log(toTop(highlights[0]));
+    // console.log(document.documentElement.clientHeight);
+    // console.log(toTop(highlights[0]));
     var hightlightHeight = [];
     for(var i=0,height;height = highlights[i++];){
         hightlightHeight[i] = toTop(height);
@@ -67,7 +67,7 @@ window.onload = function () {
 
     window.onscroll = function () {
 
-        console.log(document.documentElement.scrollTop);
+        // console.log(document.documentElement.scrollTop);
 
         checkCurrent(highlights,hightlightHeight,'highlight-show');
 
