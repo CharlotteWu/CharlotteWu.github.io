@@ -54,7 +54,7 @@ window.onload = function () {
     //为指定的dom元素添加样式
     function checkCurrent(el,elHeight,styleClassName) {
         for(var i=0;i<el.length;i++){
-            if( document.documentElement.scrollTop + document.documentElement.clientHeight >= elHeight[i] &&  document.documentElement.scrollTop <= elHeight[i]){
+            if( document.documentElement.scrollTop + document.documentElement.clientHeight >= elHeight[i] &&  document.documentElement.scrollTop+22 <= elHeight[i]){
                 addClass(el[i],styleClassName);
             }else{
                 removeClass(el[i],styleClassName);

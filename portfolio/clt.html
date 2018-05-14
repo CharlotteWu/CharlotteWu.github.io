@@ -73,7 +73,7 @@
             <div class="section-part">
                 <p class="part-head">思考，局限，挑战</p>
                 <p class="paragraph">由于计机网宣传较少的原因，班长发送消息往往比计机网所发布的更快让学生知晓。让计机网变得可有可无。如何更加好的帮助学生通过计算机等级考试成为重点。在此老师希望增加试题和报名等功能来完善网站，更好的应和学生的需求。</p>
-                <p class="paragraph">所以这次主要的问题是<span class="highlight">合理重构网站的功能结构，并且制定一个合理的模拟考试模块</span>成为了主要目标。</p>
+                <p class="paragraph">所以这次主要的问题是<span class="highlight">合理重构网站的功能结构，并且制定一个合理的模拟考试模块和报名模块</span>成为了主要目标。</p>
                 <p class="paragraph">但由于前期开发经费基本零，开展调查无法扩展一定范围，前期难以收集一定量的数据。</p>
             </div>
         </section>
@@ -108,11 +108,18 @@
             <div class="section-part">
                 <p class="part-head">功能结构</p>
                 <p class="paragraph">旧版网站中的内容主要以资讯公告类为主，但现在不但有资讯，并且有试题，报名等新功能的出现。所以重新规划结构就非常重要啦。</p>
+                <p class="paragraph">首先将需求全部罗列出来，看下具体有什么需求。</p>
+                <div class="pic">
+                    <img src="../img/clt/needs.png">
+                </div>
                 <p class="paragraph">物以类聚，人以群分。在结构规划中也是这个道理，相同的类项归类到一个单元下，方便用户查找。</p>
                 <p class="paragraph">按照这种分类思想：我对所有功能进行了整理：</p>
                 <div class="pic">
                     <img src="../img/clt/ia.jpg">
                 </div>
+                <p class="paragraph">报考资讯、领取证书等<span class="highlight">资讯公告文章更新频率不高、量且不多</span>，合并于资讯公告一栏中。</p>
+                <p class="paragraph">资料下载、模拟战场均属于备考中会用到的功能，所以归类至一起。</p>
+                <p class="paragraph">以此类推，归类出了报名查询，个人资料，问与答模块。</p>
             </div>
         </section>
 
@@ -131,7 +138,7 @@
                     <img src="../img/clt/test1.jpg">
 
                     <div class="illustrate illustrate-left illus1">
-                        因为每个等级考试里还分为多个考试种类，将等级与类型分开选择，减少选择干扰。
+                        因为每个等级考试里还分为多个考试种类，将等级与类型分开选择，减少选择干扰。如果提交时缺选，会在选择框旁边提示用户选择。
                     </div>
                 </div>
                 <div class="pic">
@@ -152,6 +159,17 @@
             </div>
         </section>
 
+        <section>
+            <div class="section-part">
+                <p class="part-head">报名模块</p>
+                <p class="paragraph">当用户需要报名参加考试时，必须登录个人账户方可报名，并且报名完之后再点击报名时会自动跳转至个人报名详情页。一是防止数据库重复录入同一个学生信息，二是可以方便追踪到改学生的具体信息（账号名统一为学生的个人学生号）。</p>
+                <div class="pic">
+                    <img src="../img/clt/signup-flow.png">
+                    <img src="../img/clt/test4.jpg">
+                </div>
+            </div>
+        </section>
+
          <section>
              <div class="section-part">
                  <p class="part-head">附件：</p>
@@ -159,7 +177,10 @@
                      <a href="../img/clt/clt-flow-chart.pdf" target="_blank">点击查看具体页面流程图>></a>
                  </p>
                  <p class="paragraph new-link">
-                     <a href="../img/clt/clt-flow-chart.pdf" target="_blank">点击查看具体页面流程图>></a>
+                     <a href="../img/clt/student-persona.jpg" target="_blank">点击查看具体文字版学生persona>></a>
+                 </p>
+                 <p class="paragraph new-link">
+                     <a href="../img/clt/teacher-persona.jpg" target="_blank">点击查看具体文字版老师persona>></a>
                  </p>
              </div>
          </section>
@@ -168,9 +189,9 @@
             <div class="section-part">
                 <p class="part-head">总结</p>
                 <p class="paragraph">
-                    项目从收集需求，整理信息架构、到制作页面、调整细节、最终通过验收，在离开学校开始实习前有了一个基本的项目流程概念。
-                    虽然像界面设计是第一次做，但从了解到用户需求，参考分析了类似的资讯类网站，才知道了围绕以用户为中心而设计的重要性－
-                    <span class="highlight">用户才是网站使用主体</span>。
+                    项目从收集需求，整理信息架构、到制作页面、调整细节、最终通过验收，在离开学校开始实习前<span class="highlight">有了一个基本的项目流程概念</span>。
+                    也注意到出了正常的流程之外还需<span class="highlight">考虑一些额外的情况</span>，成功了怎样，失败了又是怎样告知用户的。
+
                 </p>
             </div>
         </section>
